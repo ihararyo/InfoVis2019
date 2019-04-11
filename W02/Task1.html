@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>W02:Task01</title>
+</head>
+<body>
+<script>
+Vec3 = function(x,y,z){
+this.x = x;
+this.y = y;
+this.z = z;
+}
+Vec3.prototype.min = function()
+{
+var mn = this.x;
+if(this.y< mn) mn=this.y;
+if(this.z< mn) mn=this.z;
+return mn;
+}
+
+Vec3.prototype.max = function()
+{
+var mx = this.x;
+if(this.y > mx) mx=this.y;
+if(this.z > mx) mx=this.z;
+return mx;
+}
+    
+var V = new Vec3(5,4,8);
+document.write("min:"+V.min()+"<BR>"+"max:"+V.max());
+
+
+</script>
+</body>
+</html>

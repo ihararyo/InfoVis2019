@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>TAG index Web</title>
+
+<script type="text/javascript">
+<!--
+Vec3 = function(x,y,z){
+this.x = x;
+this.y = y;
+this.z = z;
+}
+
+function culculate(data1, data2, data3, data4, data5, data6, data7, data8, data9) {
+var VA = new Vec3(data1,data2,data3);
+var VB = new Vec3(data4,data5,data6);
+var VC = new Vec3(data7,data8,data9);
+
+var VxAB = data4-data1;
+var VyAB = data5-data2;
+var VzAB = data6-data3;
+
+var VxAC = data7-data1;
+var VyAC = data8-data2;
+var VzAC = data9-data3;
+
+
+var zettaiti_AB =VxAB*VxAB+VyAB*VyAB+VzAB*VzAB;
+var zettaiti_AC = VxAC*VxAC+VyAC*VyAC+VzAC*VzAC;
+var naiseki_ABAC = VxAB*VxAC+VyAB*VyAC+VzAB*VzAC;
+     document.sample.data10.value=Math.sqrt(zettaiti_AB*zettaiti_AC-naiseki_ABAC*naiseki_ABAC)/2;
+}
+//-->
+</script>
+
+</head>
+<body>
+
+please input number and push culcurate button.
+
+</body>
+
+<form name="sample">
+    <br>X0_vectre:<br>
+    <input type="text" name="data1">
+    <br>Y0_vectre:<br>
+    <input type="text" name="data2">
+    <br>Z0_vectre:<br>
+    <input type="text" name="data3">
+    <br>X1_vectre:<br>
+    <input type="text" name="data4">
+    <br>Y1_vectre:<br>
+    <input type="text" name="data5">
+    <br>Z1_vectre:<br>
+    <input type="text" name="data6">
+    <br>X2_vectre:<br>
+    <input type="text" name="data7">
+    <br>Y2_vectre:<br>
+    <input type="text" name="data8">
+    <br>Z2_vectre:<br>
+    <input type="text" name="data9">
+    <br>AreaOfTriangle_Anser<br>
+    <input type="text" name="data10">
+
+    
+    <input type="button" value="culcurate" onClick="culculate(data1.value, data2.value, data3.value, data4.value, data5.value, data6.value, data7.value, data8.value, data9.value)">
+</form>
+
+</html>
