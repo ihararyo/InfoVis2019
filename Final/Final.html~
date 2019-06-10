@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>FINAL_TASK: Final_Task</title>
+  </head>
+
+ 
+  <div id="display" style="height: 80%; width:80%; float: bottom; float: left;">
+ <body style="margin:220 0;"></body>
+  </div>
+
+  <head>
+ <meta http-equiv="content-type" charset="utf-8">
+  </head>
+  
+  <div id="controller" style="height:20%; width:20%; float:bottom; float: left;">
+    <label id="label" style="font-family:Arial;"></label>
+   
+      <label id="labelx" style="position: absolute; left: 3%; top: 10%"></label><br>
+      <input type="range" name="inx" min="-1" max="1" step="0.001" value="0" id="x" style="position: absolute; left: 3%; top: 12%"/><br>
+       <label id="labely" style="position: absolute; left: 3%; top: 14%"></label><br>
+      <input type="range" name="iny" min="-1" max="1" step="0.001" value="0" id="y" style="position: absolute; left: 3%; top: 16%"/><br>
+      <label id="labelz" style="position: absolute; left: 3%; top: 18%"></label><br>
+      <input type="range" name="inz" min="-1" max="1" step="0.001" value="0" id="z" style="position: absolute; left: 3%; top: 20%"/><br>
+   
+    <button id="xyz" style="position: absolute; left: 3%; top: 22%">Apply</button><br>
+  
+    <span style="position: absolute; left: 3%; top: 10%" />x:</span>
+    <span style="position: absolute; left: 3%; top: 14%" />y:</span>
+<span style="position: absolute; left: 3%; top: 18%" />z:</span>
+<span  style="position: absolute; left: 3%; top: 1%" />
+   191x003x　　　　　　井原　凌
+</span>
+    <span  style="position: absolute; left: 3%; top: 4%" />
+    概要:下の３つのバーを動かして法線ベクトルを変化させることで平面を表示させることができる。Applyで実行。
+</span>
+<span  style="position: absolute; left: 3%; top: 7%" />
+    結果:右のFig.1、Fig.2に実行結果を示す。与えられたデータを平面で表示することができた。
+</span>
+<span style="position: absolute; left: 81%; top: 55%" />Fig.1(x:0.632 y:-0.666 z:0.843)</span>
+<span style="position: absolute; left: 81%; top: 95%" />Fig.2(x:-0.07 y:-0.087 z:0.422)</span>
+<body>
+ 
+  <img src="fig1.png"   width="270" height="270" style="position: absolute; left: 81%; top: 20%">
+  <img src="fig3.png"   width="270" height="270" style="position: absolute; left: 81%; top: 60%"> 
+  </body>
+
+   </div>
+  
+  <script src="Bounds.js"></script>
+  <script src="Final.js"></script>
+  <script src="KVS.min.js"></script>
+  <script src="KVS2THREE.min.js"></script>
+  <script src="KVSLobsterData.js"></script>
+  <script src="https://threejs.org/examples/js/math/Lut.js"></script>
+  <script src="Sliceplane.js"></script>	
+  <script src="three.min.js"></script>
+  <script src="TrackballControls.js"></script>	
+  <script>
+    main();
+  </script>
+</body>
+
+</html>
